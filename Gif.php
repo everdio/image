@@ -2,6 +2,7 @@
 namespace Modules\Image {
     class Gif extends \Modules\Image {
         const IMAGE_TYPE = 1;        
+        const IMAGE_EXTENSION = ["gif"];
         
         public function create($path) {
             return imagecreatefromgif($path);

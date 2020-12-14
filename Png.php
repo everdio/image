@@ -2,6 +2,7 @@
 namespace Modules\Image {
     class Png extends \Modules\Image {
         const IMAGE_TYPE = 3;        
+        const IMAGE_EXTENSION = ["png"];
         
         public function create($path) {
             return imagecreatefrompng($path);

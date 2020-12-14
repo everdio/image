@@ -2,6 +2,7 @@
 namespace Modules\Image {
     class Webp extends \Modules\Image {
         const IMAGE_TYPE = 18;
+        const IMAGE_EXTENSION = ["webp"];
         
         public function create($path) {
             imagecreatefromwebp($path);

@@ -2,6 +2,7 @@
 namespace Modules\Image {
     class Jpeg extends \Modules\Image {
         const IMAGE_TYPE = 2;
+        const IMAGE_EXTENSION = ["jpg","jpeg"];
         
         protected function create($path) {
             return imagecreatefromjpeg($path);
